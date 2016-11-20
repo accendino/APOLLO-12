@@ -1,0 +1,15 @@
+@import "base/_variables.less";
+@import "base/_functions.less";
+@import "base/_utils.less";
+@import "base/_base.less";
+ 
+
+
+
+/*файл с переменными*/
+/*миксины/функции*/
+/*утилиты*/
+/*общ стили для всей страницы или отд.разделов*/
+/*когда подключаем less файл в другой то можно расширение не писать*/
+/*например @import "base/_variables";*/
+
