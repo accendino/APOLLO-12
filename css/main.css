@@ -165,3 +165,161 @@ body {
     letter-spacing: 9px;
   }
 }
+.navigation {
+  background-color: #35577d;
+  /*or background*/
+  color: #fff;
+  /*text color*/
+  font-size: 14px;
+  /*разм шрифта*/
+  font-weight: 700;
+  /*жЫрность шрифта, bold*/
+  letter-spacing: 3px;
+  /*расстояние м/у символами*/
+  text-transform: uppercase;
+  /*заглавные буквы*/
+  /*height: 67px; /*высота блока*/
+  /*padding-top: 23px; /*внутренний отступ сверху, не для маленьких экранов в этом случае*/
+  /*padding-bottom: 23px; /*внутренний отступ снизу, не для маленьких экранов в этом случае*/
+}
+@media (min-width: 992px) {
+  .navigation {
+    /*цвет фона выпадающего меню, при размере медиум и больше*/
+    background-color: #38383a;
+    padding-top: 23px;
+    /*внутренний отступ сверху*/
+    padding-bottom: 23px;
+    /*внутренний отступ снизу*/
+  }
+}
+.navigation .navigation__toggle-button {
+  display: block;
+  /*отображаем при размере менее медиум*/
+  position: relative;
+  /*указываем родителя для иконки*/
+  cursor: pointer;
+  background-color: #38383a;
+  /*цвет кнопки навигации, не нажатой, при размере менее медиум*/
+  padding-top: 23px;
+  /*внутренний отступ сверху*/
+  padding-bottom: 23px;
+  /*внутренний отступ снизу*/
+  padding-left: 15px;
+  /*внутренний отступ слева*/
+  padding-right: 15px;
+  /*внутренний отступ справа*/
+}
+.navigation .navigation__toggle-button:before {
+  /*позиционируем иконку поверх меню*/
+  content: "";
+  position: absolute;
+  top: 23px;
+  /*позиционируем*/
+  right: 15px;
+  /*позиционируем*/
+  width: 25px;
+  /*берем размеры из инфо о файле*/
+  height: 20px;
+  /*берем размеры из инфо о файле*/
+  background: url(../img/icons/navigation-icon.png);
+  /*устанавливаем иконку*/
+  background-repeat: no-repeat;
+  /*запрещаем повторение*/
+  /*background-position: right top; /*позиционируем*/
+  background-position: 0 0;
+  /*позиционируем*/
+}
+.navigation .navigation__toggle-button:focus,
+.navigation .navigation__toggle-button:active {
+  background-color: #16385f;
+  /*цвет выпадающего меню навигации во время наведения и нажатия, при размере менее медиум*/
+}
+@media (min-width: 992px) {
+  .navigation .navigation__toggle-button {
+    display: none;
+    /*скрываем при размере медиум и больее*/
+  }
+}
+.navigation .navigation__toggle-button--active {
+  /*интересно как так?*/
+  background-color: #16385f;
+}
+.navigation ul {
+  display: none;
+  /*скрываем при размере менее медиум*/
+  margin: 0;
+  /*велич.отступа от кажд края элемента, внешний отступ*/
+  padding: 0;
+  /*велич. полей вокруг содержимого элемента, внутренний отступ*/
+  list-style-type: none;
+  /*убираем точки*/
+  /*display: flex; /*выравниваем в строчку если не используем float: left;*/
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .navigation ul {
+    display: flex;
+    /*отображаем при размере медиум и больше. выравниваем в строчку если не используем float: left;*/
+  }
+}
+.navigation li {
+  margin: 0;
+  padding: 0;
+  /*float: left;  /*выравниваем в строчку*/
+  border-bottom: 1px solid #466a92;
+  /*разделительная линия м/у элементами списка при размере менее медиум*/
+  /*padding-top: 23px; /*внутренний отступ сверху*/
+  /*padding-bottom: 23px; /*внутренний отступ снизу*/
+}
+@media (min-width: 992px) {
+  .navigation li {
+    border-bottom: none;
+    /*отменяем разделит.линию при размере медиум и больее*/
+    padding: 0;
+    /*отменяем отступы при размере медиум и больше*/
+  }
+}
+.navigation li:active {
+  color: #ffcc00;
+  /* or a.active{color: #ffcc00;}*/
+}
+.navigation a {
+  color: #FFF;
+  text-decoration: none;
+  /*underlining*/
+  padding-top: 23px;
+  /*внутренний отступ сверху*/
+  padding-bottom: 23px;
+  /*внутренний отступ снизу*/
+  display: block;
+  /*выстраиваем вертикально при размере менее медиум*/
+  /*padding-left: 15px; /*внутренний отступ слева*/
+  /*padding-right: 15px; /*внутренний отступ справа*/
+}
+.navigation a:hover,
+.navigation a:active {
+  color: #FFCC00;
+  /* or li.active{color: #ffcc00;}*/
+}
+@media (min-width: 992px) {
+  .navigation a {
+    padding: 0;
+    /*отменяем отступы при размере медиум и больее*/
+    display: inline;
+    /*выстраиваем горизонтально при размере медиум и больее*/
+  }
+}
+.container--mobile--no-padding {
+  width: 100%;
+  /*padding-left: 0; /*внутренний отступ слева*/
+  /*padding-right: 0; /*внутренний отступ справа*/
+  /*@media (min-width: 1170px){
+		width: 1170px;*/
+}
+@media (min-width: 992px) {
+  .container--mobile--no-padding {
+    width: 970px;
+    /*padding-left: 15px; /*внутренний отступ слева*/
+    /*padding-right: 15px; /*внутренний отступ справа*/
+  }
+}
