@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 	// скрипт: показываем/скрываем выпадающее меню/под смартфоны
 	//это переменные под кнопку и меню
-        var pull = $('#navigation-toggle');
-        var menu = $('.navigation ul');
+    var pull = $('#navigation-toggle');
+    var menu = $('.navigation ul');
 
         //menuheight = menu.height(); 
         
@@ -25,8 +25,16 @@ $(document).ready(function() {
             menu.removeAttr('style');
         }
     });
-	
+
+    /* вызов слайдера owl-carousel*/
+    $("#top-slider").owlCarousel({
+        singleItem : true,
+        navigation : true,
+
+
+        
+    });
+    
 });
 
-  
-         
+

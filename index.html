@@ -17,6 +17,11 @@
 	<link rel="stylesheet" href="fonts/notoserif/notoserif.css"> <!-- подключили шрифт noto serif -->
 	<link rel="stylesheet" href="fonts/als-rubl/als-rubl.css"> <!-- подключили шрифт als-ruble -->
 
+	<!-- подключили карусель -->
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css"> 
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css"> 
+	<!-- //подключили карусель-->
+
 
 	<!-- FavIcons -->
 	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
@@ -67,169 +72,176 @@
 	    <div class="slider"> <!-- сделали класс для заливки во весь экран -->
 	    	<div class="container">
 
-	    		<!-- СЛАЙД 1 -->
-	    		<div class="row"> <!-- вкладываем в ряд/колонки чтобы осуществить перенос текста не используя брейк-лайн-->
-	    			<div class="col-sm-8 col-sm-offset-2 col-md-8 col-lg-6 col-lg-offset-3"> <!-- 1)col-md можно не указывать. 2)с пом. col-lg-offset-3  сдвигаем ячейку в право на 3 колонки (для экрана десктоп) и т.д. -->
+	    		<div id="top-slider" class="owl-carousel">    
 
-	    				<div class="visible-xs"> <!-- контент виден только на устройствах xs-->
-	    					<div class="slider__title">Тариф для фрилансеров</div>
-	    					<div class="slider__slogan">Надежные сервера, отзывчивая техподдержка.</div>
-	    				</div>
+	    			<!-- СЛАЙД 1 -->
+	    			<div class="row"> <!-- вкладываем в ряд/колонки чтобы осуществить перенос текста не используя брейк-лайн-->
+	    				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-lg-6 col-lg-offset-3"> <!-- 1)col-md можно не указывать. 2)с пом. col-lg-offset-3  сдвигаем ячейку в право на 3 колонки (для экрана десктоп) и т.д. -->
 
-	    				<div class="hidden-xs"> <!-- контент скрыт на устройствах xs -->
-	    					<div class="slider__title">Тариф для фрилансеров и небольших сайтов</div>
-	    					<div class="slider__slogan">Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.</div>
-	    				</div>	    				
-
-	    				
-	    			</div>	
-	    		</div>
-
-	    		<!-- СЛАЙД 2 -->
-	    		<div class="row"> <!-- вкладываем в ряд/колонки чтобы осуществить перенос текста не используя брейк-лайн-->
-	    			<div class="col-sm-8 col-sm-offset-2 col-md-8 col-lg-6 col-lg-offset-3"> <!-- 1)col-md можно не указывать. 2)с пом. col-lg-offset-3  сдвигаем ячейку в право на 3 колонки (для экрана десктоп) и т.д. -->
-
-	    				<div class="visible-xs"> <!-- контент виден только на устройствах xs-->
-	    					<div class="slider__title">Хостинг для стартапа</div>
-	    					<div class="slider__slogan">Увеличивайте мощноности при необходимости.</div>
-	    				</div>
-
-	    				<div class="hidden-xs"> <!-- контент скрыт на устройствах xs -->
-	    					<div class="slider__title">Нужен хостинг для стартапа? Вы в правильном месте!</div>
-	    					<div class="slider__slogan">Начните со специального стартап тарифа. Увеличивайте мощности при необходимости.</div>
-	    				</div>	    				
-
-	    				
-	    			</div>	
-	    		</div>
-
-	    		<!-- СЛАЙД 3 -->
-	    		<div class="row"> 
-	    			<div class="col-sm-8 col-sm-offset-2 col-md-8 col-lg-6 col-lg-offset-3"> <!-- 1)col-md можно не указывать. 2)с пом. col-lg-offset-3  сдвигаем ячейку в право на 3 колонки (для экрана десктоп) и т.д. -->
-
-	    				<div class="visible-xs"> <!-- контент виден только на устройствах xs-->
-	    					<div class="slider__title">Highload площадка</div>
-	    					<div class="slider__slogan">Супер мощные сервера, 
-	    						мгновенная масштабируемость.</div>
+	    					<div class="visible-xs"> <!-- контент виден только на устройствах xs-->
+	    						<div class="slider__title">Тариф для фрилансеров</div>
+	    						<div class="slider__slogan">Надежные сервера, отзывчивая техподдержка.</div>
 	    					</div>
 
 	    					<div class="hidden-xs"> <!-- контент скрыт на устройствах xs -->
-	    						<div class="slider__title">Надежная площадка для высоконагруженных проектов</div>
-	    						<div class="slider__slogan">Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация.</div>
+	    						<div class="slider__title">Тариф для фрилансеров и небольших сайтов</div>
+	    						<div class="slider__slogan">Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.</div>
 	    					</div>	    				
 
 	    					
 	    				</div>	
 	    			</div>
-	    			
-	    		</div>
 
-	    	</div>
-	    	<!-- //slider -->
+	    			<!-- СЛАЙД 2 -->
+	    			<div class="row"> <!-- вкладываем в ряд/колонки чтобы осуществить перенос текста не используя брейк-лайн-->
+	    				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-lg-6 col-lg-offset-3"> <!-- 1)col-md можно не указывать. 2)с пом. col-lg-offset-3  сдвигаем ячейку в право на 3 колонки (для экрана десктоп) и т.д. -->
 
-	    	<!-- how we work -->
-	    	<div class="container">
-	    		<div class="block">как мы работаем</div>
-	    		<div class="row">
-	    			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> <!-- можно просто col-sm-6 col-lg-3, xs всегда 12 а большие как следующие по убыванию -->
-	    				<div class="block">ячейка 1</div>
+	    					<div class="visible-xs"> <!-- контент виден только на устройствах xs-->
+	    						<div class="slider__title">Хостинг для стартапа</div>
+	    						<div class="slider__slogan">Увеличивайте мощноности при необходимости.</div>
+	    					</div>
+
+	    					<div class="hidden-xs"> <!-- контент скрыт на устройствах xs -->
+	    						<div class="slider__title">Нужен хостинг для стартапа? Вы в правильном месте!</div>
+	    						<div class="slider__slogan">Начните со специального стартап тарифа. Увеличивайте мощности при необходимости.</div>
+	    					</div>	    				
+
+	    					
+	    				</div>	
 	    			</div>
-	    			<div class="col-xs-12 col-sm-6 col-lg-3">
+
+	    			<!-- СЛАЙД 3 -->
+	    			<div class="row"> 
+	    				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-lg-6 col-lg-offset-3"> <!-- 1)col-md можно не указывать. 2)с пом. col-lg-offset-3  сдвигаем ячейку в право на 3 колонки (для экрана десктоп) и т.д. -->
+
+	    					<div class="visible-xs"> <!-- контент виден только на устройствах xs-->
+	    						<div class="slider__title">Highload площадка</div>
+	    						<div class="slider__slogan">Супер мощные сервера, 
+	    							мгновенная масштабируемость.</div>
+	    						</div>
+
+	    						<div class="hidden-xs"> <!-- контент скрыт на устройствах xs -->
+	    							<div class="slider__title">Надежная площадка для высоконагруженных проектов</div>
+	    							<div class="slider__slogan">Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация.</div>
+	    						</div>	    				
+
+	    						
+	    					</div>	
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    </div>
+	    <!-- //slider -->
+
+	    <!-- how we work -->
+	    <div class="container">
+	    	<div class="block">как мы работаем</div>
+	    	<div class="row">
+	    		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> <!-- можно просто col-sm-6 col-lg-3, xs всегда 12 а большие как следующие по убыванию -->
+	    			<div class="block">ячейка 1</div>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-6 col-lg-3">
+	    			<div class="block">ячейка 2</div>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-6 col-lg-3">
+	    			<div class="block">ячейка 3</div>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-6 col-lg-3">
+	    			<div class="block">ячейка 4</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- //how we work -->
+
+	    <!-- line -->
+	    <div class="line"></div>
+	    <!-- //line -->
+
+	    <!-- freelance hosting -->
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col-sx-12 col-sm-6">
+	    			<div class="block">картинка - ноутбук</div>
+	    		</div>
+	    		<div class="col-sx-12 col-sm-6">
+	    			<div class="block">текст - фриланс</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- //freelance hosting -->
+
+	    <!-- line -->
+	    <div class="line"></div>
+	    <!-- //line -->
+
+	    <!-- startap hosting -->
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col-sx-12 col-sm-6 col-sm-push-6">
+	    			<div class="block">картинка - ракета</div>
+	    		</div>
+	    		<div class="col-sx-12 col-sm-6 col-sm-pull-6">
+	    			<div class="block">текст - стартап</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- //startap hosting -->
+
+	    <!-- prices -->
+	    <div class="container">
+	    	<div class="block">тарифы и пакеты</div>
+	    	<div class="row">
+	    		<div class="col-xs-12 col-sm-4"> <!-- можно просто col-sm-4 -->
+	    			<div class="block">тариф 1</div>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="block">тариф 2</div>
+	    		</div>
+	    		<div class="col-xs-12 col-sm-4">
+	    			<div class="block">тариф 3</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- //prices -->
+
+	    <!-- footer -->
+	    <div class="footer">
+	    	<div class="container">
+	    		<div class="row">
+
+	    			<div class="col-sx-12 col-sm-4 col-lg-3"> <!-- м/добавить col-md-4 -->
+	    				<div class="block">ячейка 1</div>
+	    			</div> 
+
+	    			<div class="col-sx-12 col-sm-4 col-lg-3">
 	    				<div class="block">ячейка 2</div>
 	    			</div>
-	    			<div class="col-xs-12 col-sm-6 col-lg-3">
+
+	    			<div class="col-sx-12 col-sm-4 col-lg-3">
 	    				<div class="block">ячейка 3</div>
 	    			</div>
-	    			<div class="col-xs-12 col-sm-6 col-lg-3">
-	    				<div class="block">ячейка 4</div>
-	    			</div>
-	    		</div>
-	    	</div>
-	    	<!-- //how we work -->
-
-	    	<!-- line -->
-	    	<div class="line"></div>
-	    	<!-- //line -->
-
-	    	<!-- freelance hosting -->
-	    	<div class="container">
-	    		<div class="row">
-	    			<div class="col-sx-12 col-sm-6">
-	    				<div class="block">картинка - ноутбук</div>
-	    			</div>
-	    			<div class="col-sx-12 col-sm-6">
-	    				<div class="block">текст - фриланс</div>
-	    			</div>
-	    		</div>
-	    	</div>
-	    	<!-- //freelance hosting -->
-
-	    	<!-- line -->
-	    	<div class="line"></div>
-	    	<!-- //line -->
-
-	    	<!-- startap hosting -->
-	    	<div class="container">
-	    		<div class="row">
-	    			<div class="col-sx-12 col-sm-6 col-sm-push-6">
-	    				<div class="block">картинка - ракета</div>
-	    			</div>
-	    			<div class="col-sx-12 col-sm-6 col-sm-pull-6">
-	    				<div class="block">текст - стартап</div>
-	    			</div>
-	    		</div>
-	    	</div>
-	    	<!-- //startap hosting -->
-
-	    	<!-- prices -->
-	    	<div class="container">
-	    		<div class="block">тарифы и пакеты</div>
-	    		<div class="row">
-	    			<div class="col-xs-12 col-sm-4"> <!-- можно просто col-sm-4 -->
-	    				<div class="block">тариф 1</div>
-	    			</div>
-	    			<div class="col-xs-12 col-sm-4">
-	    				<div class="block">тариф 2</div>
-	    			</div>
-	    			<div class="col-xs-12 col-sm-4">
-	    				<div class="block">тариф 3</div>
-	    			</div>
-	    		</div>
-	    	</div>
-	    	<!-- //prices -->
-
-	    	<!-- footer -->
-	    	<div class="footer">
-	    		<div class="container">
-	    			<div class="row">
-
-	    				<div class="col-sx-12 col-sm-4 col-lg-3"> <!-- м/добавить col-md-4 -->
-	    					<div class="block">ячейка 1</div>
-	    				</div> 
-
-	    				<div class="col-sx-12 col-sm-4 col-lg-3">
-	    					<div class="block">ячейка 2</div>
-	    				</div>
-
-	    				<div class="col-sx-12 col-sm-4 col-lg-3">
-	    					<div class="block">ячейка 3</div>
-	    				</div>
-
-	    			</div>
-
-	    			<div class="block">® копирайт</div>
 
 	    		</div>
+
+	    		<div class="block">® копирайт</div>
+
 	    	</div>
+	    </div>
 
-	    	<!-- footer -->
+	    <!-- footer -->
+
+	    <!-- scripts -->
+	    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	    <script src="libs/bootstrap/js/bootstrap.min.js"></script>	    	
+	    <!-- owl carousel one -->
+	    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	    
+	    <!-- user scripts -->
+	    <script src="js/main.js"></script>
 
 
-	    	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	    	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	    	<script src="js/main.js"></script>
 
-
-
-	    </body>
-	    </html>
+	</body>
+	</html>
