@@ -87,6 +87,24 @@ body {
   font-size: 1.6rem;
   font-family: 'Noto Sans';
 }
+.heading {
+  /*кладем пока сюда т.к. используем один и тот же heading*/
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+}
+.section {
+  padding-top: 68px;
+  padding-bottom: 70px;
+}
 .block {
   background: #ffdb4c;
   /*фон*/
@@ -478,4 +496,62 @@ body {
 .owl-item.loading {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
+}
+.benefits {
+  padding-bottom: 38px;
+}
+.benefits:last-child {
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .benefits:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+  .benefits:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .benefits {
+    margin-bottom: 24px;
+  }
+}
+.benefits__img {
+  margin-top: 20px;
+  margin-bottom: 18px;
+  height: 130px;
+  display: table;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .benefits__img {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+}
+.benefits__img div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.benefits__img img {
+  display: inline-block;
+}
+.benefits__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  .benefits__header {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+.benefits__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
 }
