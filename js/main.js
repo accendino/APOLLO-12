@@ -28,13 +28,15 @@ $(document).ready(function() {
 
     /* вызов слайдера owl-carousel*/
     $("#top-slider").owlCarousel({
-        singleItem : true,
-        navigation : true,
-
-
-        
-    });
-    
+        singleItem: true,
+        navigation: true,
+        /*pagination : true,*/
+        /*paginationNumbers: false,*/
+        theme: "top-slider-theme",
+        navigationText : ["",""],
+        slideSpeed: 800
+        /*paginationSpeed : 300,*/
+    });    
 });
 
 

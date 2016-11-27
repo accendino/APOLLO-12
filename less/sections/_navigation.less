@@ -8,12 +8,69 @@
 	/*height: 67px; /*высота блока*/
 	/*padding-top: 23px; /*внутренний отступ сверху, не для маленьких экранов в этом случае*/
 	/*padding-bottom: 23px; /*внутренний отступ снизу, не для маленьких экранов в этом случае*/
-			
+	box-shadow: 0px 5px 10px 0px rgba(42, 73, 109, 1);
+	z-index: 1;
+	position: relative;
+
 	@media (min-width: 992px){  /*цвет фона выпадающего меню, при размере медиум и больше*/
 		background-color: #38383a;
 		padding-top: 23px; /*внутренний отступ сверху*/
 	    padding-bottom: 23px; /*внутренний отступ снизу*/		
 	}
+
+	a{
+		color: #FFF;
+		text-decoration: none;  /*underlining*/
+		padding-top: 23px; /*внутренний отступ сверху*/
+	    padding-bottom: 23px; /*внутренний отступ снизу*/
+	    display: block; /*выстраиваем вертикально при размере менее медиум*/
+	    /*padding-left: 15px; /*внутренний отступ слева*/
+	    /*padding-right: 15px; /*внутренний отступ справа*/
+	    
+
+		&:hover, &:active{
+		       color: #FFCC00;  /* or li.active{color: #ffcc00;}*/
+               }		   
+
+		 @media (min-width: 992px){			
+		         padding: 0; /*отменяем отступы при размере медиум и больее*/
+		         display: inline; /*выстраиваем горизонтально при размере медиум и больее*/
+		}
+
+	    }
+
+	    ul{
+        display: none; /*скрываем при размере менее медиум*/
+		margin: 0; /*велич.отступа от кажд края элемента, внешний отступ*/
+		padding: 0; /*велич. полей вокруг содержимого элемента, внутренний отступ*/	
+		list-style-type: none; /*убираем точки*/
+		/*display: flex; /*выравниваем в строчку если не используем float: left;*/
+		justify-content: space-between;		
+	    /*background-color: #35577D;*/
+	    
+		@media (min-width: 992px){ 
+		display: flex;/*отображаем при размере медиум и больше. выравниваем в строчку если не используем float: left;*/
+        /*background-color: transparent;*/	    	                   
+    } 
+    }   
+
+	li{
+		margin: 0;
+		padding: 0;
+		/*float: left;  /*выравниваем в строчку*/
+		border-bottom: 1px solid #466a92; /*разделительная линия м/у элементами списка при размере менее медиум*/
+		/*padding-top: 23px; /*внутренний отступ сверху*/
+	    /*padding-bottom: 23px; /*внутренний отступ снизу*/
+	    
+		@media (min-width: 992px){			
+			border-bottom: none; /*отменяем разделит.линию при размере медиум и больее*/
+			padding: 0;  /*отменяем отступы при размере медиум и больше*/
+		}
+
+		&:active{
+		color: #ffcc00;  /* or a.active{color: #ffcc00;}*/			
+		        } 
+    }	    
 	
 .navigation__toggle-button{
 	display: block; /*отображаем при размере менее медиум*/
@@ -27,7 +84,7 @@
 	    right: 15px; /*позиционируем*/
 		width: 25px; /*берем размеры из инфо о файле*/		
 		height: 20px; /*берем размеры из инфо о файле*/
-		background: url(../img/icons/navigation-icon.png); /*устанавливаем иконку*/
+		background: url('../img/icons/navigation-icon.png'); /*устанавливаем иконку*/
 	    background-repeat: no-repeat; /*запрещаем повторение*/
 	    /*background-position: right top; /*позиционируем*/
 	    background-position: 0 0; /*позиционируем*/
@@ -49,62 +106,9 @@
 	                   }	
 }
 
-.navigation__toggle-button--active{ /*интересно как так?*/
+.navigation__toggle-button--active{ /*интересно*/
 	background-color: #16385f;
 }	
-	
-	ul{
-        display: none; /*скрываем при размере менее медиум*/
-		margin: 0; /*велич.отступа от кажд края элемента, внешний отступ*/
-		padding: 0; /*велич. полей вокруг содержимого элемента, внутренний отступ*/	
-		list-style-type: none; /*убираем точки*/
-		/*display: flex; /*выравниваем в строчку если не используем float: left;*/
-		justify-content: space-between;		
-	
-		@media (min-width: 992px){ 
-		display: flex;/*отображаем при размере медиум и больше. выравниваем в строчку если не используем float: left;*/
-	    	                   }			
-		}
-
-	li{
-		margin: 0;
-		padding: 0;
-		/*float: left;  /*выравниваем в строчку*/
-		border-bottom: 1px solid #466a92; /*разделительная линия м/у элементами списка при размере менее медиум*/
-		/*padding-top: 23px; /*внутренний отступ сверху*/
-	    /*padding-bottom: 23px; /*внутренний отступ снизу*/
-	    
-		@media (min-width: 992px){			
-			border-bottom: none; /*отменяем разделит.линию при размере медиум и больее*/
-			padding: 0;  /*отменяем отступы при размере медиум и больше*/
-		}
-
-		&:active{
-		color: #ffcc00;  /* or a.active{color: #ffcc00;}*/			
-		        } 
-		}
-
-	a{
-		color: #FFF;
-		text-decoration: none;  /*underlining*/
-		padding-top: 23px; /*внутренний отступ сверху*/
-	    padding-bottom: 23px; /*внутренний отступ снизу*/
-	    display: block; /*выстраиваем вертикально при размере менее медиум*/
-	    /*padding-left: 15px; /*внутренний отступ слева*/
-	    /*padding-right: 15px; /*внутренний отступ справа*/
-	    
-
-		&:hover, &:active{
-		       color: #FFCC00;  /* or li.active{color: #ffcc00;}*/	
-		        }
-
-		 @media (min-width: 992px){			
-		         padding: 0; /*отменяем отступы при размере медиум и больее*/
-		         display: inline; /*выстраиваем горизонтально при размере медиум и больее*/
-		}
-
-	    }		
-}
 
 .container--mobile--no-padding{
 	width: 100%;
@@ -113,9 +117,12 @@
 	
 	@media (min-width: 992px){
 		width: 970px;
-	/*padding-left: 15px; /*внутренний отступ слева*/
-	/*padding-right: 15px; /*внутренний отступ справа*/
+	padding-left: 15px; /*внутренний отступ слева*/
+	padding-right: 15px; /*внутренний отступ справа*/
+	width: 970px;
 	}
-	/*@media (min-width: 1170px){
-		width: 1170px;*/
+	@media (min-width: 1170px){
+		width: 1170px;
 	}
+}
+}

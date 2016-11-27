@@ -19,8 +19,9 @@
 
 	<!-- подключили карусель -->
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css"> 
-	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css"> 
-	<!-- //подключили карусель-->
+	<!-- <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">  это настройки темы карусели по умолчанию, а мы будем использовать на страничке только одну карусель и пропишем все в своем файле с настройками в less-->
+
+	<!-- //подключили карусель эту тему указали в main.js-->
 
 
 	<!-- FavIcons -->
@@ -42,18 +43,9 @@
 	    <![endif]-->
 
 	    <!-- Здесь пишем код -->
-	    <!-- logo -->
-	    <div class="container">
-
-	    	<div class="logo">
-	    		<div class="logo__name">Аполло 404</div>
-	    		<div class="logo__slogan">хостинг компания</div>
-	    	</div>	       	
-	    </div>
-	    <!-- //logo -->
 
 	    <!-- nav -->
-	    <nav class="navigation"> <!-- сделали класс для заливки во весь экран -->
+	    <nav class="navigation visible-xs visible-sm"> <!-- сделали класс для заливки во весь экран -->
 	    	<div id="navigation-toggle" class="navigation__toggle-button">навигация</div>
 	    	<div class="container container--mobile--no-padding">		    	    		
 	    		<ul>
@@ -64,7 +56,32 @@
 	    			<li><a href="#">тарифы</a></li>
 	    			<li><a href="#">контакты</a></li>
 	    		</ul>
-	    	</div>	    	
+	    	</div>    	
+	    </nav>
+	    <!-- //nav -->
+
+	    <!-- logo -->
+	    <div class="container">
+	    	<div class="logo">
+	    		<div class="logo__name">Аполло 404</div>
+	    		<div class="logo__slogan">хостинг компания</div>	
+	    	</div>       	
+	    </div>
+	    <!-- //logo -->
+
+	    <!-- nav -->
+	    <nav class="navigation visible-md visible-lg"> <!-- сделали класс для заливки во весь экран -->
+	    	<div id="navigation-toggle" class="navigation__toggle-button">навигация</div>
+	    	<div class="container container--mobile--no-padding">		    	    		
+	    		<ul>
+	    			<li><a href="#">главная</a></li>
+	    			<li><a href="#">как мы работаем</a></li>
+	    			<li><a href="#">фрилансерам</a></li>
+	    			<li><a href="#">стартапам</a></li>
+	    			<li><a href="#">тарифы</a></li>
+	    			<li><a href="#">контакты</a></li>
+	    		</ul>
+	    	</div>    	
 	    </nav>
 	    <!-- //nav -->
 
@@ -132,116 +149,116 @@
 	    		</div>
 	    	</div>
 
-	    </div>
-	    <!-- //slider -->
 
-	    <!-- how we work -->
-	    <div class="container">
-	    	<div class="block">как мы работаем</div>
-	    	<div class="row">
-	    		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> <!-- можно просто col-sm-6 col-lg-3, xs всегда 12 а большие как следующие по убыванию -->
-	    			<div class="block">ячейка 1</div>
-	    		</div>
-	    		<div class="col-xs-12 col-sm-6 col-lg-3">
-	    			<div class="block">ячейка 2</div>
-	    		</div>
-	    		<div class="col-xs-12 col-sm-6 col-lg-3">
-	    			<div class="block">ячейка 3</div>
-	    		</div>
-	    		<div class="col-xs-12 col-sm-6 col-lg-3">
-	    			<div class="block">ячейка 4</div>
-	    		</div>
-	    	</div>
-	    </div>
-	    <!-- //how we work -->
+	    	<!-- //slider -->
 
-	    <!-- line -->
-	    <div class="line"></div>
-	    <!-- //line -->
-
-	    <!-- freelance hosting -->
-	    <div class="container">
-	    	<div class="row">
-	    		<div class="col-sx-12 col-sm-6">
-	    			<div class="block">картинка - ноутбук</div>
-	    		</div>
-	    		<div class="col-sx-12 col-sm-6">
-	    			<div class="block">текст - фриланс</div>
-	    		</div>
-	    	</div>
-	    </div>
-	    <!-- //freelance hosting -->
-
-	    <!-- line -->
-	    <div class="line"></div>
-	    <!-- //line -->
-
-	    <!-- startap hosting -->
-	    <div class="container">
-	    	<div class="row">
-	    		<div class="col-sx-12 col-sm-6 col-sm-push-6">
-	    			<div class="block">картинка - ракета</div>
-	    		</div>
-	    		<div class="col-sx-12 col-sm-6 col-sm-pull-6">
-	    			<div class="block">текст - стартап</div>
-	    		</div>
-	    	</div>
-	    </div>
-	    <!-- //startap hosting -->
-
-	    <!-- prices -->
-	    <div class="container">
-	    	<div class="block">тарифы и пакеты</div>
-	    	<div class="row">
-	    		<div class="col-xs-12 col-sm-4"> <!-- можно просто col-sm-4 -->
-	    			<div class="block">тариф 1</div>
-	    		</div>
-	    		<div class="col-xs-12 col-sm-4">
-	    			<div class="block">тариф 2</div>
-	    		</div>
-	    		<div class="col-xs-12 col-sm-4">
-	    			<div class="block">тариф 3</div>
-	    		</div>
-	    	</div>
-	    </div>
-	    <!-- //prices -->
-
-	    <!-- footer -->
-	    <div class="footer">
+	    	<!-- how we work -->
 	    	<div class="container">
+	    		<div class="block">как мы работаем</div>
 	    		<div class="row">
-
-	    			<div class="col-sx-12 col-sm-4 col-lg-3"> <!-- м/добавить col-md-4 -->
+	    			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> <!-- можно просто col-sm-6 col-lg-3, xs всегда 12 а большие как следующие по убыванию -->
 	    				<div class="block">ячейка 1</div>
-	    			</div> 
-
-	    			<div class="col-sx-12 col-sm-4 col-lg-3">
+	    			</div>
+	    			<div class="col-xs-12 col-sm-6 col-lg-3">
 	    				<div class="block">ячейка 2</div>
 	    			</div>
-
-	    			<div class="col-sx-12 col-sm-4 col-lg-3">
+	    			<div class="col-xs-12 col-sm-6 col-lg-3">
 	    				<div class="block">ячейка 3</div>
 	    			</div>
+	    			<div class="col-xs-12 col-sm-6 col-lg-3">
+	    				<div class="block">ячейка 4</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<!-- //how we work -->
+
+	    	<!-- line -->
+	    	<div class="line"></div>
+	    	<!-- //line -->
+
+	    	<!-- freelance hosting -->
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-sx-12 col-sm-6">
+	    				<div class="block">картинка - ноутбук</div>
+	    			</div>
+	    			<div class="col-sx-12 col-sm-6">
+	    				<div class="block">текст - фриланс</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<!-- //freelance hosting -->
+
+	    	<!-- line -->
+	    	<div class="line"></div>
+	    	<!-- //line -->
+
+	    	<!-- startap hosting -->
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-sx-12 col-sm-6 col-sm-push-6">
+	    				<div class="block">картинка - ракета</div>
+	    			</div>
+	    			<div class="col-sx-12 col-sm-6 col-sm-pull-6">
+	    				<div class="block">текст - стартап</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<!-- //startap hosting -->
+
+	    	<!-- prices -->
+	    	<div class="container">
+	    		<div class="block">тарифы и пакеты</div>
+	    		<div class="row">
+	    			<div class="col-xs-12 col-sm-4"> <!-- можно просто col-sm-4 -->
+	    				<div class="block">тариф 1</div>
+	    			</div>
+	    			<div class="col-xs-12 col-sm-4">
+	    				<div class="block">тариф 2</div>
+	    			</div>
+	    			<div class="col-xs-12 col-sm-4">
+	    				<div class="block">тариф 3</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<!-- //prices -->
+
+	    	<!-- footer -->
+	    	<div class="footer">
+	    		<div class="container">
+	    			<div class="row">
+
+	    				<div class="col-sx-12 col-sm-4 col-lg-3"> <!-- м/добавить col-md-4 -->
+	    					<div class="block">ячейка 1</div>
+	    				</div> 
+
+	    				<div class="col-sx-12 col-sm-4 col-lg-3">
+	    					<div class="block">ячейка 2</div>
+	    				</div>
+
+	    				<div class="col-sx-12 col-sm-4 col-lg-3">
+	    					<div class="block">ячейка 3</div>
+	    				</div>
+
+	    			</div>
+
+	    			<div class="block">® копирайт</div>
 
 	    		</div>
-
-	    		<div class="block">® копирайт</div>
-
 	    	</div>
-	    </div>
 
-	    <!-- footer -->
+	    	<!-- footer -->
 
-	    <!-- scripts -->
-	    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	    <script src="libs/bootstrap/js/bootstrap.min.js"></script>	    	
-	    <!-- owl carousel one -->
-	    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	    
-	    <!-- user scripts -->
-	    <script src="js/main.js"></script>
+	    	<!-- scripts -->
+	    	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	    	<script src="libs/bootstrap/js/bootstrap.min.js"></script>	    	
+	    	<!-- owl carousel one -->
+	    	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 
+	    	<!-- user scripts -->
+	    	<script src="js/main.js"></script>
 
 
-	</body>
-	</html>
+
+	    </body>
+	    </html>
