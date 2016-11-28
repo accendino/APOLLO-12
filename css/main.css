@@ -94,16 +94,71 @@ body {
   font-size: 28px;
   margin-bottom: 0;
   margin-top: 0;
+  position: relative;
+}
+.heading.heading--mar-bot20 {
+  margin-bottom: 20px;
 }
 @media (min-width: 1200px) {
   .heading {
     font-size: 38px;
+    margin-top: 25px;
     margin-bottom: 40px;
   }
 }
+.heading:before {
+  display: none;
+  width: 26px;
+  height: 26px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  background-color: #ffc80a;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  content: "";
+  padding-top: 3px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  position: absolute;
+  left: -15px;
+  top: -45px;
+}
+@media (min-width: 1200px) {
+  .heading:before {
+    left: -31px;
+    top: -20px;
+  }
+}
+.heading.heading--number1:before {
+  content: "1";
+  display: block;
+}
+.heading.heading--number2:before {
+  content: "2";
+  display: block;
+}
+/*.heading--mar-top20{
+		margin-bottom: 20px;
+		}*/
 .section {
-  padding-top: 68px;
-  padding-bottom: 70px;
+  padding-top: 30px;
+  /*60??*/
+  padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .section {
+    /*1170??*/
+    padding-bottom: 67px;
+  }
+}
+.section.section--pad-top70 {
+  padding-top: 70px;
+}
+@media (min-width: 992px) {
+  .section.section--md-pad-bot0 {
+    padding-bottom: 0px;
+  }
 }
 .block {
   background: #ffdb4c;
@@ -554,4 +609,45 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #777;
+}
+@media (min-width: 768px) {
+  .servise-description__img {
+    padding-top: 27px;
+  }
+  .servise-description__img.servise-description__img--pad-top0 {
+    padding-top: 0;
+  }
+}
+.servise-description__img.servise-description__img--xs-mar-bot40 {
+  margin-top: -25px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .servise-description__img.servise-description__img--xs-mar-bot40 {
+    margin-bottom: 0;
+    padding-right: 80px;
+  }
+}
+.servise-description__content {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.servise-description__content p {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.servise-description__arrow {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icons/arrow-yellow.png);
+  /*background-repeat: no-repeat;
+	background-position: top left;*/
+  display: block;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  br {
+    display: none;
+  }
 }

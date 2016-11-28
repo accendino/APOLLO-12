@@ -19,63 +19,121 @@ body{
 	font-size: 28px;
 	margin-bottom: 0;
 	margin-top: 0;
+	position: relative;
+	
+	&.heading--mar-bot20{
+		margin-bottom: 20px;
+	}
 	
 	@media (min-width: 1200px){
-	font-size: 38px;
-	margin-bottom: 40px;
-	}	
-}
+		font-size: 38px;
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
 
-.section{
-	padding-top: 68px;
-	padding-bottom: 70px;
-}
-	
+	&:before{
+		display: none;	
+		width: 26px;
+		height: 26px;
+		-webkit-border-radius: 13px;
+		border-radius: 13px;
+		background-color: #ffc80a;
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 700;
+		content: "";
+		padding-top: 3px;
+		padding-bottom: 9px;
+		padding-left: 9px;
+		position: absolute;
+		left: -15px;
+		top: -45px;
+		
+		@media (min-width: 1200px){
+			left: -31px;
+			top: -20px;
+		}
+	}
 
+	&.heading--number1:before{
+		content: "1";
+		display: block;
+	}
 
-.block{
-	background: #ffdb4c; /*фон*/
-	padding: 20px;  /*отст*/
-	color: #000;    /*цв текста*/
-	font-size: 32px;  /*разм шрафта*/
-	font-weight: bold; /**/
-	text-align: center; /*направление текста*/
-	margin-top: 30px; /*отступы м/у блоками*/
-	margin-bottom: 30px; /* -/- */	
-}
-
-.line{
-	border-top: 1px solid #eaeff5;
-	/*height: 1px; и так отображается */
-}
-
-.footer{
-	background-color: #252525;
-}
-
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
-@media only screen and (max-width : 1200px) {
-	
-}
-
-/* Medium Devices, Desktops - adaptive styles bofore 992px */
-@media only screen and (max-width : 992px) {
+	&.heading--number2:before{
+		content: "2";	
+		display: block;
+	}
 
 }
 
-/* Small Devices, Tablets - adaptive styles bofore 768px */
-@media only screen and (max-width : 768px) {
+/*.heading--mar-top20{
+		margin-bottom: 20px;
+		}*/
 
-}
+		.section{
+			padding-top: 30px;  /*60??*/
+			padding-bottom: 50px;
+			
+			@media (min-width: 1200px){ /*1170??*/
+				padding-bottom: 67px;}
+				
+				&.section--pad-top70{
+					padding-top: 70px;
+				}
+						
+				&.section--md-pad-bot0{
 
-/* Extra Small Devices, Phones - adaptive styles bofore 480px */
-@media only screen and (max-width : 480px) {
+					@media (min-width: 992px){
+						padding-bottom: 0px;}
+					}
+				}
+				
 
-}
 
-/* Custom, iPhone Retina - adaptive styles bofore 320px */
-@media only screen and (max-width : 320px) {
+				.block{
+					background: #ffdb4c; /*фон*/
+					padding: 20px;  /*отст*/
+					color: #000;    /*цв текста*/
+					font-size: 32px;  /*разм шрафта*/
+					font-weight: bold; /**/
+					text-align: center; /*направление текста*/
+					margin-top: 30px; /*отступы м/у блоками*/
+					margin-bottom: 30px; /* -/- */	
+				}
 
-}
+				.line{
+					border-top: 1px solid #eaeff5;
+					/*height: 1px; и так отображается */
+				}
+
+				.footer{
+					background-color: #252525;
+				}
+
+				/*==========  Desktop First Method  ==========*/
+
+				/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+				@media only screen and (max-width : 1200px) {
+					
+				}
+
+				/* Medium Devices, Desktops - adaptive styles bofore 992px */
+				@media only screen and (max-width : 992px) {
+
+				}
+
+				/* Small Devices, Tablets - adaptive styles bofore 768px */
+				@media only screen and (max-width : 768px) {
+
+				}
+
+				/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+				@media only screen and (max-width : 480px) {
+
+				}
+
+				/* Custom, iPhone Retina - adaptive styles bofore 320px */
+				@media only screen and (max-width : 320px) {
+
+				}
