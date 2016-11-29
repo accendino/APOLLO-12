@@ -13,6 +13,11 @@ body{
 	font-family: 'Noto Sans';	
 }
 
+p{
+	font-size: 14px;
+	line-height: 24px;
+}
+
 .heading{   /*кладем пока сюда т.к. используем один и тот же heading*/
 	color: #333;
 	font-weight: 700;
@@ -24,6 +29,10 @@ body{
 	&.heading--mar-bot20{
 		margin-bottom: 20px;
 	}
+
+	/*&.heading--mar-bot10{
+		margin-bottom: 10px;
+	}*/
 	
 	@media (min-width: 1200px){
 		font-size: 38px;
@@ -81,6 +90,7 @@ body{
 				&.section--pad-top70{
 					padding-top: 70px;
 				}
+
 						
 				&.section--md-pad-bot0{
 
@@ -89,7 +99,20 @@ body{
 					}
 				}
 				
-
+            .row{
+            	    &.row--mar-bot23{
+            		margin-bottom: 23px;
+            		} 
+            		
+            		&.row--pad-bot40{
+            		padding-bottom: 40px;
+            	    }  
+            	    
+            	    &.row--pad-bot70{
+            	    padding-bottom: 70px;	
+            	    }        
+            }
+        
 
 				.block{
 					background: #ffdb4c; /*фон*/

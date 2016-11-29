@@ -87,6 +87,10 @@ body {
   font-size: 1.6rem;
   font-family: 'Noto Sans';
 }
+p {
+  font-size: 14px;
+  line-height: 24px;
+}
 .heading {
   /*кладем пока сюда т.к. используем один и тот же heading*/
   color: #333;
@@ -95,6 +99,9 @@ body {
   margin-bottom: 0;
   margin-top: 0;
   position: relative;
+  /*&.heading--mar-bot10{
+		margin-bottom: 10px;
+	}*/
 }
 .heading.heading--mar-bot20 {
   margin-bottom: 20px;
@@ -159,6 +166,15 @@ body {
   .section.section--md-pad-bot0 {
     padding-bottom: 0px;
   }
+}
+.row.row--mar-bot23 {
+  margin-bottom: 23px;
+}
+.row.row--pad-bot40 {
+  padding-bottom: 40px;
+}
+.row.row--pad-bot70 {
+  padding-bottom: 70px;
 }
 .block {
   background: #ffdb4c;
@@ -624,7 +640,8 @@ body {
 }
 @media (min-width: 1200px) {
   .servise-description__img.servise-description__img--xs-mar-bot40 {
-    margin-bottom: 0;
+    margin-bottom: 40px;
+    padding-top: 40px;
     padding-right: 80px;
   }
 }
@@ -650,4 +667,110 @@ body {
   br {
     display: none;
   }
+}
+.package {
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 47px;
+  border-radius: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
+  margin-bottom: 40px;
+}
+.package.package--last {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .package {
+    margin-bottom: 0;
+  }
+}
+.package__type {
+  font-size: 12px;
+  color: #242526;
+  margin-bottom: 20px;
+  /*30px;*/
+  text-transform: uppercase;
+}
+.package__price {
+  font-size: 48px;
+  font-weight: 700;
+  color: #242526;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+.package__price:after {
+  content: "c";
+  font-family: 'als_rublregular';
+}
+.package__period {
+  font-size: 12px;
+  color: #242526;
+  margin-bottom: 35px;
+  /*20px;*/
+}
+.package__benefits {
+  font-size: 14px;
+  line-height: 20px;
+  /*20px;*/
+  margin-bottom: 40px;
+}
+.package__benefits ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.package__benefits ul li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.package__benefits ul li:before {
+  content: "";
+  background-image: url("../img/icons/ok-icon.png");
+  width: 12px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-position: left -2px;
+  margin-right: 7px;
+  display: inline-block;
+}
+.button {
+  background-color: #252525;
+  box-shadow: 0px 8px 16px 0px rgba(171, 171, 171, 0.8);
+  -webkit-border-radius: 29px;
+  border-radius: 29px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #FFF;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #ffc80a;
+  text-decoration: none;
+  color: #FFF;
+}
+.button--yellow {
+  background-color: #ffc80a;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.button--yellow:hover,
+.button--yellow:active,
+.button--yellow:focus {
+  background-color: #ffe400;
+  text-decoration: none;
+  color: #000;
 }

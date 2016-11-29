@@ -1,0 +1,77 @@
+.package{
+	text-align: center;
+	padding-top: 34px;
+	padding-bottom: 47px;
+	border-radius: 7px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
+    
+    margin-bottom: 40px;
+    
+    &.package--last{
+    	margin-bottom: 0;
+    }
+    
+    @media (min-width: 768px){
+    	margin-bottom: 0;
+    }
+}
+
+.package__type{
+	font-size: 12px;	
+	color: #242526;
+	margin-bottom: 20px;  /*30px;*/
+	text-transform: uppercase;
+}
+
+.package__price{
+	font-size: 48px;
+	font-weight: 700;
+	color: #242526;	
+	margin-bottom: 15px;
+	line-height: 1;
+	
+	&:after{
+		content: "c";
+		font-family: 'als_rublregular';
+	}
+	
+}
+
+.package__period{
+	font-size: 12px;	
+	color: #242526;
+	margin-bottom: 35px; /*20px;*/
+}
+
+.package__benefits{
+	font-size: 14px;
+	line-height: 20px; /*20px;*/
+	margin-bottom: 40px;	
+	
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		
+		li{
+			margin: 0;
+		    padding: 0;
+		    margin-bottom: 10px;		    	    
+			
+			&:before{
+				content: "";
+				background-image: url("../img/icons/ok-icon.png");
+				width: 12px;
+				height: 8px;
+				background-repeat: no-repeat;
+			    background-position: left -2px;
+			    margin-right: 7px;
+			    display: inline-block;
+			    								
+			}
+		}
+	}
+}
