@@ -153,10 +153,13 @@ p {
   /*60??*/
   padding-bottom: 50px;
 }
+.section.section--footer-pad-bot25 {
+  padding-bottom: 25px;
+}
 @media (min-width: 1200px) {
-  .section {
+  .section.section--footer-pad-bot25 {
     /*1170??*/
-    padding-bottom: 67px;
+    padding-bottom: 70px;
   }
 }
 .section.section--pad-top70 {
@@ -169,6 +172,11 @@ p {
 }
 .row.row--mar-bot23 {
   margin-bottom: 23px;
+}
+@media (min-width: 768px) {
+  .row.row--mar-bot37 {
+    margin-bottom: 37px;
+  }
 }
 .row.row--pad-bot40 {
   padding-bottom: 40px;
@@ -209,7 +217,7 @@ p {
   padding-top: 30px;
   padding-bottom: 40px;
   /*!!!*/
-  padding-top: 80px;
+  padding-top: 95px;
   /*!!!*/
 }
 @media (min-width: 992px) {
@@ -281,7 +289,7 @@ p {
 }
 @media (min-width: 992px) {
   .navigation {
-    position: static;
+    position: relative;
   }
 }
 @media (min-width: 992px) {
@@ -793,6 +801,12 @@ p {
 }
 .footer {
   background-color: #252525;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 8px;
+  }
 }
 .footer__title {
   color: #f7f8f9;
@@ -809,7 +823,7 @@ p {
   font-weight: 600;
   color: #6c6c6c;
   line-height: 20px;
-  margin-bottom: 67px;
+  margin-bottom: 40px;
 }
 .footer__nav li {
   margin: 0;

@@ -21,19 +21,26 @@ $(document).ready(function() {
     // при увеличении размера окна -отображает скрытое меню БОЖЕМОЙ   //убирается модификатор --active
     $(window).resize(function(){
         var w = $(window).width();
-        if(w > 640 && menu.is(':hidden')){
+        if(w > 992) {
             menu.removeAttr('style');
+            pull.removeClass('navigation__toggle-button--active');
         }
     });
 
     // скрытие меню при клике для md и менее
-    var w = $(window).width();
-    if ( w < 992 ) {
-        $('nav.navigation a').on("click", function(){
-            menu.slideToggle();
-        
-        });
-    }
+    $('nav.navigation a').on("click", function(){
+    	fnstart();
+    });
+
+	// В ф-ии fnstart(); проверяем - если меню открыто (проверяем по наличию класса --active у кнопки pull)
+	// тогда убираем класс модификатор --active у кнопки pull
+	// и сворачиваем/скрываем меню 
+	function fnstart(){	
+		if ( $("#navigation-toggle").hasClass("navigation__toggle-button--active")  ) {
+   			pull.toggleClass('navigation__toggle-button--active');
+			menu.slideToggle();
+		}
+	};
 
     /* вызов слайдера owl-carousel*/
     $("#top-slider").owlCarousel({
@@ -43,13 +50,13 @@ $(document).ready(function() {
         /*paginationNumbers: false,*/
         theme: "top-slider-theme",
         navigationText : ["",""],
-        slideSpeed: 800
-        /*paginationSpeed : 300,*/
-    });   
+        slideSpeed: 600
+    });
 
-    $("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
-        highlightSelector: "nav a"
-    }); 
+   $("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+        highlightSelector:"nav a"
+    });
+    
 });
 
 

@@ -84,14 +84,19 @@ p{
 			padding-top: 30px;  /*60??*/
 			padding-bottom: 50px;
 			
-			@media (min-width: 1200px){ /*1170??*/
-				padding-bottom: 67px;}
+			&.section--footer-pad-bot25{					
+						padding-bottom: 25px;
+						
+						@media (min-width: 1200px){ /*1170??*/
+				         padding-bottom: 70px;
+				         }
+				}			
 				
 				&.section--pad-top70{
-					padding-top: 70px;
+					padding-top: 70px;					
 				}
 
-						
+										
 				&.section--md-pad-bot0{
 
 					@media (min-width: 992px){
@@ -102,6 +107,13 @@ p{
             .row{
             	    &.row--mar-bot23{
             		margin-bottom: 23px;
+            		} 
+
+            		&.row--mar-bot37{
+            			@media (min-width: 768px){
+						margin-bottom: 37px;
+						}
+            		
             		} 
             		
             		&.row--pad-bot40{
